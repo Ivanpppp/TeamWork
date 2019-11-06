@@ -2,8 +2,7 @@
   "pages": [
     "pages/Main/Main",
     "pages/My/My",
-    "pages/Recommend/Recommend",
-    "pages/Notice/Notice"
+    "pages/Recommend/Recommend"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -34,12 +33,6 @@
         "text": "个人信息",
         "iconPath": "static/tabBarico/my.png",
         "selectedIconPath": "static/tabBarico/my_sel.png"
-      },
-      {
-        "pagePath": "pages/Notice/Notice",
-        "text": "消息",
-        "iconPath": "static/tabBarico/mes.png",
-        "selectedIconPath": "static/tabBarico/mes_sel.png"
       }
     ]
   },

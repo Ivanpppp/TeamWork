@@ -1,1 +1,1 @@
-<view class="page"></view>
+<view class="page"><top-search vue-id="1" bind:__l="__l"></top-search></view>

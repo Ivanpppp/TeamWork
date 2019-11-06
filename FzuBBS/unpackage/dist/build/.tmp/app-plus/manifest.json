@@ -7,7 +7,7 @@
   "id": "__UNI__F002FA0",
   "name": "FzuBBS",
   "version": {
-    "name": "1.0.0",
+    "name": "1.0.1",
     "code": "100"
   },
   "description": "",
@@ -47,6 +47,13 @@
     "usingComponents": true,
     "nvueCompiler": "uni-app",
     "distribute": {
+      "splashscreen": {
+        "android": {
+          "hdpi": "C:/Users/71401/Desktop/Home.png",
+          "xxhdpi": "C:/Users/71401/Desktop/Home.png",
+          "xhdpi": "C:/Users/71401/Desktop/Home.png"
+        }
+      },
       "google": {
         "permissions": [
           "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
@@ -121,12 +128,6 @@
           "text": "个人信息",
           "iconPath": "static/tabBarico/my.png",
           "selectedIconPath": "static/tabBarico/my_sel.png"
-        },
-        {
-          "pagePath": "pages/Notice/Notice",
-          "text": "消息",
-          "iconPath": "static/tabBarico/mes.png",
-          "selectedIconPath": "static/tabBarico/mes_sel.png"
         }
       ],
       "height": "50px",

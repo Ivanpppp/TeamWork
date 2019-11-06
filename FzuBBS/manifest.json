@@ -2,7 +2,7 @@
     "name" : "FzuBBS",
     "appid" : "__UNI__F002FA0",
     "description" : "",
-    "versionName" : "1.0.0",
+    "versionName" : "1.0.1",
     "versionCode" : "100",
     "transformPx" : false,
     /* 5+App特有相关 */
@@ -49,7 +49,14 @@
             /* ios打包配置 */
             "ios" : {},
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {},
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "C:/Users/71401/Desktop/Home.png",
+                    "xxhdpi" : "C:/Users/71401/Desktop/Home.png",
+                    "xhdpi" : "C:/Users/71401/Desktop/Home.png"
+                }
+            }
         }
     },
     /* 快应用特有相关 */
