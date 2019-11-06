@@ -1,0 +1,67 @@
+/*轮播图的样式*/
+.RecSchool{
+	width: 100%;
+	height: 400upx;
+}
+
+/* 值得阅读标题 */
+.WorthRead{
+	margin-top: 20upx;
+	padding: 20upx;
+}
+
+.WorthRead-title{
+	display: flex;
+	flex-direction: row;
+}
+
+.WorthRead-icon{
+	width: 45upx;
+	height: 45upx;
+	margin-top: 5upx;
+}
+
+.WorthReadWord{
+	font-size: 35upx;
+	margin-left: 35upx;
+	font-weight: bold;
+}
+
+/* 值得阅读正文 */
+.RecommendRead{
+	display: flex;
+	flex-direction: column;
+	/* 如果超出长度则省略 */
+	/* white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; */
+	
+}
+
+.single-recommend{
+	display: flex;
+	padding-bottom: 30upx;
+	padding-top: 30upx;
+}
+.recommend-detail{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/* border: #007AFF 10upx; 边框未设置成功*/
+}
+
+.recommend-title{
+	font-size: 45upx;
+	font-weight: bold;
+}
+
+.recommend-content{
+	font-size: 35upx;
+	height: 100%;
+	word-break: break-all;
+	
+}
+
+.recommend-time{
+	text-align: right;
+}

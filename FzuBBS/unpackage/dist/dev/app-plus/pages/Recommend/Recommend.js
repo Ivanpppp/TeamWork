@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"RecSchool{ width: 100%; height: ",[0,400],"; }\n",],undefined,{path:"./pages/Recommend/Recommend.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/Recommend/Recommend.wxml') } }));

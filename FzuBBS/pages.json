@@ -4,18 +4,19 @@
 			"path" : "pages/Main/Main",
 			"style" : {}
 		}
-		,{
-            "path" : "pages/Search/Search",
-            "style" : {}
-        }
         ,{
             "path" : "pages/My/My",
             "style" : {}
         }
         ,{
-            "path" : "pages/Recommand/Recommand",
+            "path" : "pages/Recommend/Recommend",
             "style" : {}
         }
+        ,{
+            "path" : "pages/Notice/Notice",
+            "style" : {}
+        }
+       
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -30,20 +31,28 @@
 		"backgroundColor":"#ffffff",
 		"list":[
 			{
-				"pagePath":"pages/Recommand/Recommand",
-				"text":"推荐"
+				"pagePath":"pages/Recommend/Recommend",
+				"text":"推荐",
+				"iconPath":"static/tabBarico/rec.png",
+				"selectedIconPath":"static/tabBarico/rec_sel.png"
 			},
 			{
 				"pagePath":"pages/Main/Main",
-				"text":"主页"
-			},
-			{
-				"pagePath":"pages/Search/Search",
-				"text":"搜索"
+				"text":"主页",
+				"iconPath":"static/tabBarico/home.png",
+				"selectedIconPath":"static/tabBarico/home_sel.png"
 			},
 			{
 				"pagePath":"pages/My/My",
-				"text":"个人信息"
+				"text":"个人信息",
+				"iconPath":"static/tabBarico/my.png",
+				"selectedIconPath":"static/tabBarico/my_sel.png"
+			},
+			{
+				"pagePath":"pages/Notice/Notice",
+				"text":"消息",
+				"iconPath":"static/tabBarico/mes.png",
+				"selectedIconPath":"static/tabBarico/mes_sel.png"
 			}
 		]
 	}	

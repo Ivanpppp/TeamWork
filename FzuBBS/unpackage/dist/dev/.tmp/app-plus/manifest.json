@@ -35,7 +35,6 @@
     },
     "popGesture": "close",
     "launchwebview": {
-      "render": "always",
       "id": "1",
       "kernel": "WKWebview",
       "uni-app": "auto"
@@ -83,8 +82,13 @@
         }
       }
     },
-    "arguments": "{\"name\":\"\",\"path\":\"\",\"query\":\"\",\"id\":0}",
     "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#ffffff",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
     "uni-app": {
       "compilerVersion": "2.3.7",
       "control": "v8",
@@ -93,6 +97,43 @@
       "nvue": {
         "flex-direction": "column"
       }
+    },
+    "tabBar": {
+      "color": "#999999",
+      "selectedColor": "#007AFF",
+      "borderStyle": "rgba(0,0,0,0.4)",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/Recommend/Recommend",
+          "text": "推荐",
+          "iconPath": "static/tabBarico/rec.png",
+          "selectedIconPath": "static/tabBarico/rec_sel.png"
+        },
+        {
+          "pagePath": "pages/Main/Main",
+          "text": "主页",
+          "iconPath": "static/tabBarico/home.png",
+          "selectedIconPath": "static/tabBarico/home_sel.png"
+        },
+        {
+          "pagePath": "pages/My/My",
+          "text": "个人信息",
+          "iconPath": "static/tabBarico/my.png",
+          "selectedIconPath": "static/tabBarico/my_sel.png"
+        },
+        {
+          "pagePath": "pages/Notice/Notice",
+          "text": "消息",
+          "iconPath": "static/tabBarico/mes.png",
+          "selectedIconPath": "static/tabBarico/mes_sel.png"
+        }
+      ],
+      "height": "50px",
+      "child": [
+        "lauchwebview"
+      ],
+      "selected": 1
     }
   }
 }

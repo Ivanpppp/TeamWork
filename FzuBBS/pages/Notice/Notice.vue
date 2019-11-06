@@ -1,6 +1,6 @@
 <template>
-	<view class="page">
-		
+	<view>
+		这是消息提示界面
 	</view>
 </template>
 
@@ -18,5 +18,5 @@
 </script>
 
 <style>
-	
+
 </style>
