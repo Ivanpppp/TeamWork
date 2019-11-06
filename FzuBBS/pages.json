@@ -1,0 +1,50 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/Main/Main",
+			"style" : {}
+		}
+		,{
+            "path" : "pages/Search/Search",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/My/My",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/Recommand/Recommand",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Fzu BBS",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},	
+	"tabBar": {
+		"color":"#999999",
+		"selectedColor":"#007AFF",
+		"borderStyle":"black",
+		"backgroundColor":"#ffffff",
+		"list":[
+			{
+				"pagePath":"pages/Recommand/Recommand",
+				"text":"推荐"
+			},
+			{
+				"pagePath":"pages/Main/Main",
+				"text":"主页"
+			},
+			{
+				"pagePath":"pages/Search/Search",
+				"text":"搜索"
+			},
+			{
+				"pagePath":"pages/My/My",
+				"text":"个人信息"
+			}
+		]
+	}	
+}
