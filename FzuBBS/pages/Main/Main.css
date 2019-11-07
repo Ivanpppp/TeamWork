@@ -1,0 +1,25 @@
+/* 板块页面布局 */
+.plate-list{
+	display: flex;
+	flex-direction: column;
+	padding-top: 70upx;
+}
+
+.single-plate{
+	display: flex;
+	flex-direction: row;
+	padding: 30upx 20upx;
+	border-bottom: 1rpx solid #ebedf0;
+}
+
+.plate-icon {
+	width: 180upx ;
+	height: 180upx ;
+	margin-right: 20rpx;
+	border-radius: 3% ;
+}
+
+.plate-name{
+	font-size: 40upx;
+	padding:  30upx 20upx 20upx 20upx;
+}

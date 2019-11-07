@@ -10,12 +10,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="193" />
-    <option name="y" value="110" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="505" />
+    <option name="y" value="128" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -58,14 +57,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="193" y="110" width="1400" height="1000" extended-state="0" />
+    <frame x="505" y="128" width="1400" height="1000" extended-state="1" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" weight="0.32966226" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info id="Resources Explorer" order="5" />
+      <window_info active="true" id="Resources Explorer" order="5" visible="true" weight="0.32966226" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />

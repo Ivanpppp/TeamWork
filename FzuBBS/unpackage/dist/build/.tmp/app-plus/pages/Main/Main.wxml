@@ -1,1 +1,1 @@
-<view class="page"><top-search vue-id="1" bind:__l="__l"></top-search></view>
+<view class="page"><view class="search-block"><view class="search-ico-wapper"><image class="search-icon" src="../../static/My/search/search.png"></image></view><input class="seach-text" placeholder="搜索帖子" maxlength="20" focus="/"/></view><view class="plate-list page-block"></view></view>

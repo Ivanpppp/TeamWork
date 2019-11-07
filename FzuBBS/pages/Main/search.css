@@ -1,0 +1,29 @@
+.search-icon{/* 搜索图标 */
+	width: 40upx;
+	height: 40upx;
+}
+
+.seach-text{/* 搜索文本框内容 */
+	font-size: 14upx;
+	background-color: #eaeaea ;
+	height: 60upx;
+	width: 650upx;
+}
+
+.search-block{/* 搜索框布局 */
+	display: flex;
+	flex-direction: row;
+	padding: 0upx 20upx 20upx 20upx ;
+	position: fixed;
+	top: 100;
+	z-index: 2000;
+	background-color: #F8F8F8;
+}
+
+.search-ico-wapper{
+	background-color: #eaeaea;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0upx 10upx;
+}

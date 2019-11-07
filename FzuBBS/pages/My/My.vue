@@ -53,7 +53,9 @@
 		methods: {
 			goLogin() {
 				if (!this.login) {
-					console.log("点击前往登录")
+					uni.navigateTo({
+						url:"../login/login"
+					})
 				}
 			}
 		}
