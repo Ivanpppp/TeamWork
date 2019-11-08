@@ -39,6 +39,14 @@
             "path" : "pages/det/det",
             "style" : {}
         }
+        ,{
+            "path" : "pages/My/User_Info/User_Info",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/My/Message/Message",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

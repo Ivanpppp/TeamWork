@@ -1,0 +1,38 @@
+.Hot-title{/* 标题样式设置 */
+	display: flex;
+	flex-direction: row;
+}
+
+
+.Hot-Post{
+	
+	padding-bottom: 10upx;
+	border-bottom: 3rpx solid #007AFF;
+}
+
+.shp-icon{/* 图标设置 */
+	width: 45upx;
+	height: 45upx;
+	margin-top: 5upx;
+}
+
+.single-hot-post{/* 每个热门帖子设置 */
+	display: flex;
+	flex-direction: column;
+	padding: 10upx 20upx;
+	border-bottom: 1rpx solid #ebedf0;
+}
+.shp-title{
+	font-size: 45upx;
+	display: flex;
+	border-bottom: 1rpx solid #ebedf0;
+}
+
+.shp-content{
+	font-size: 35upx;
+	height: 130upx;
+	overflow: auto;
+	text-overflow: ellipsis;
+	
+}
+

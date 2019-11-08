@@ -18,8 +18,8 @@
 		</view>
 		
 		
-		<view class="plate-list page-block" @click="ShowDetail_Main">
-			<view class="single-plate">
+		<view class="plate-list page-block" >
+			<view class="single-plate" @click="ShowDetail_Main">
 					<image src="../../static/Homeicon/Home.png" class="plate-icon"></image>
 				<view class="plate-name">
 					福州大学主板块

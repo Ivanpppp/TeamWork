@@ -8,11 +8,13 @@
 .WorthRead{
 	margin-top: 20upx;
 	padding: 20upx;
+	
 }
 
 .WorthRead-title{
 	display: flex;
 	flex-direction: row;
+	border-bottom:1rpx solid #ebedf0 ;
 }
 
 .WorthRead-icon{

@@ -1,26 +1,138 @@
 <template>
-	<view class="page">
-		<view class="content">
-			<textarea placeholder="Search message" style="width: 550upx;height: 50upx;margin-bottom: 30upx;border: 1px solid;border-radius:25px;text-align: center;"/>
-			<button style=" height: 150upx; width: 750upx;margin-bottom: -75upx;"@click="det">2019高考录取查询</button>
-			<image src="../../static/RecIcon/fireReading.png" style=" height: 35upx; width: 35upx;margin-right: 5upx;margin-bottom: -35upx;" ></image>
-			<button style=" height: 75upx; width: 200upx;margin-right: 0upx;">2019.7.15</button>
-			<button style=" height: 150upx; width: 750upx;margin-bottom: -75upx;"@click="det">收纳箱有需要的么，租房时用的，现在用不到了，基本都还是八成新</button>
-			<button style=" height: 75upx; width: 200upx;margin-right: 0upx;">2019.11.6</button>
-			<button style=" height: 150upx; width: 750upx;margin-bottom: -75upx;"@click="det">研究生数学建模成绩多久出来啊</button>
-			<button style=" height: 75upx; width: 200upx;margin-right: 0upx;">2019.11.6</button>
-			<button style=" height: 150upx; width: 750upx;margin-bottom: -75upx;"@click="det">诚意求购一电动车，价格不是问题，谢谢</button>
-			<button style=" height: 75upx; width: 200upx;margin-right: 0upx;">2019.11.6</button>
-			<button style=" height: 150upx; width: 750upx;margin-bottom: -75upx;"@click="det">福大有想买二手电动车的吗，本人大四实习结束，电动车是八九成新</button>
-			<button style=" height: 75upx; width: 200upx;margin-right: 0upx;">2019.11.6</button>
-			<button style=" height: 150upx; width: 750upx;margin-bottom: -75upx;"@click="det">大学好不适应</button>
-			<button style=" height: 75upx; width: 200upx;margin-right: 0upx;">2019.11.6</button>
-			<button style=" height: 150upx; width: 750upx;margin-bottom: -75upx;"@click="det">请问一下福大哪里有5g信号</button>
-			<button style=" height: 75upx; width: 200upx;margin-right: 0upx;">2019.11.6</button>
-			<button style=" height: 150upx; width: 750upx;margin-bottom: -75upx;"@click="det">[S9线下观赛助威邀请函]</button>
-			<button style=" height: 75upx; width: 200upx;margin-right: 0upx;">2019.11.6</button>
-	
+	<view >
+		
+		
+		<view class="Hot-Post page-block">
+				<view class="WorthRead-title">
+					<image src="../../static/RecIcon/WorthReading.png" class="WorthRead-icon"></image>
+					<view class="WorthReadWord">
+						热门帖子
+					</view>
+				</view>
+			
+			
+			<view class="single-hot-post" @click="det()">
+				<view class="shp-title">
+					有关专业选择/转专业的杂谈与建议
+				</view>
+				
+				<view class="shp-content">
+					高考出分邻近报考了，想必专业问题大家很关注，还有进校能不能转专业，转专业的条件怎么样，关于报考专业，建议大家注意三点：
+					1.量力而行，参考往年专业录取位次，一专业很重要，尽量不要虚报高位次专业
+					2.第一专业志愿优先，其次并行，意味着第一专业冲的话很可能录取不了，导致平行录取时无好专业可进，进到一般的专业浪费了分数
+					3.学校已经不接受修读小语种公共外语，统一修读大学英语，一外非英严谨报考
+				</view>
+				<view class="recommend-time">
+					2019-06-23 11:41
+				</view>
+			</view>
+			
+			<view class="single-hot-post" @click="det()">
+				<view class="shp-title">
+					咨询解答转专业的一切疑问
+				</view>
+				
+				<view class="shp-content">
+					今年转专业工作已经开始了，相比去年有小差，申请条件不看成绩绩点了
+					lz往年成功转专业成功，当时也很困惑找不到人询问，所以今年为学弟学妹无偿在线解答所有转专业问题
+					咨询前先要了解教务处转专业17年公告
+				</view>
+				<view class="recommend-time">
+					2019-06-23 11:41
+				</view>
+			</view>
+		</view>	
+		<view class="Post-List">
+			<view class="single-hot-post" @click="det()">
+				<view class="shp-title">
+					有关专业选择/转专业的杂谈与建议
+				</view>
+				
+				<view class="shp-content">
+					高考出分邻近报考了，想必专业问题大家很关注，还有进校能不能转专业，转专业的条件怎么样，关于报考专业，建议大家注意三点：
+					1.量力而行，参考往年专业录取位次，一专业很重要，尽量不要虚报高位次专业
+					2.第一专业志愿优先，其次并行，意味着第一专业冲的话很可能录取不了，导致平行录取时无好专业可进，进到一般的专业浪费了分数
+					3.学校已经不接受修读小语种公共外语，统一修读大学英语，一外非英严谨报考
+				</view>
+				<view class="recommend-time">
+					2019-06-23 11:41
+				</view>
+			</view>
+			
+			<view class="single-hot-post" @click="det()">
+				<view class="shp-title">
+					咨询解答转专业的一切疑问
+				</view>
+				
+				<view class="shp-content">
+					今年转专业工作已经开始了，相比去年有小差，申请条件不看成绩绩点了
+					lz往年成功转专业成功，当时也很困惑找不到人询问，所以今年为学弟学妹无偿在线解答所有转专业问题
+					咨询前先要了解教务处转专业17年公告
+				</view>
+				<view class="recommend-time">
+					2019-06-23 11:41
+				</view>
+			</view>
+			
+			<view class="single-hot-post" @click="det()">
+				<view class="shp-title">
+					咨询解答转专业的一切疑问
+				</view>
+				
+				<view class="shp-content">
+					今年转专业工作已经开始了，相比去年有小差，申请条件不看成绩绩点了
+					lz往年成功转专业成功，当时也很困惑找不到人询问，所以今年为学弟学妹无偿在线解答所有转专业问题
+					咨询前先要了解教务处转专业17年公告
+				</view>
+				<view class="recommend-time">
+					2019-06-23 11:41
+				</view>
+			</view>
+			<view class="single-hot-post" @click="det()">
+				<view class="shp-title">
+					咨询解答转专业的一切疑问
+				</view>
+				
+				<view class="shp-content">
+					今年转专业工作已经开始了，相比去年有小差，申请条件不看成绩绩点了
+					lz往年成功转专业成功，当时也很困惑找不到人询问，所以今年为学弟学妹无偿在线解答所有转专业问题
+					咨询前先要了解教务处转专业17年公告
+				</view>
+				<view class="recommend-time" >
+					2019-06-23 11:41
+				</view>
+			</view>
+			<view class="single-hot-post" @click="det()">
+				<view class="shp-title">
+					咨询解答转专业的一切疑问
+				</view>
+				
+				<view class="shp-content">
+					今年转专业工作已经开始了，相比去年有小差，申请条件不看成绩绩点了
+					lz往年成功转专业成功，当时也很困惑找不到人询问，所以今年为学弟学妹无偿在线解答所有转专业问题
+					咨询前先要了解教务处转专业17年公告
+				</view>
+				<view class="recommend-time">
+					2019-06-23 11:41
+				</view>
+			</view>
+			<view class="single-hot-post" @click="det()">
+				<view class="shp-title">
+					咨询解答转专业的一切疑问
+				</view>
+				
+				<view class="shp-content">
+					今年转专业工作已经开始了，相比去年有小差，申请条件不看成绩绩点了
+					lz往年成功转专业成功，当时也很困惑找不到人询问，所以今年为学弟学妹无偿在线解答所有转专业问题
+					咨询前先要了解教务处转专业17年公告
+				</view>
+				<view class="recommend-time">
+					2019-06-23 11:41
+				</view>
+			</view>
 		</view>
+			
+		
 	</view>
 </template>
 
@@ -42,18 +154,6 @@
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	},
-	.t{
-		font-size: 35upx;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 30upx;
-	}
+	@import url("../details/Post-plate.css");
+	@import url("../Recommend/Rec.css");
 </style>
