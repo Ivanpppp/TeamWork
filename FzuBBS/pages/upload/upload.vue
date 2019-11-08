@@ -3,8 +3,8 @@
 		<view class="content">
 			<text class="tittle">发布帖子</text>
 		</view>
-		<textarea  placeholder="标题" style="width: 650upx;height: 80upx;margin-bottom: 50upx;margin-top: 50upx; border: 1upx solid;"/>
-		<textarea  placeholder="请输入内容" style="width: 650upx;height: 400upx;margin-bottom: 50upx;margin-top: 50upx;border: 1upx solid;"/>
+		<textarea  placeholder="标题" style="border-radius: 15upx; width: 650upx;height: 80upx;margin-bottom: 50upx;margin-top: 50upx; border: 1upx solid;"/>
+		<textarea  placeholder="请输入内容" style="border-radius: 15upx;width: 650upx;height: 400upx;margin-bottom: 50upx;margin-top: 50upx;border: 1upx solid;"/>
 		<button style="width: 120upx;height: 50upx;text-align: center;font-size: 15upx;">提交</button>
 	</view>
 </template>

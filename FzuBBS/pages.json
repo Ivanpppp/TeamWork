@@ -40,6 +40,12 @@
         }
         ,{
             "path" : "pages/upload/upload",
+            "style" : {
+				"backgroundColor":"#007AFF"
+			}
+        }
+        ,{
+            "path" : "pages/news/news",
             "style" : {}
         }
     ],
@@ -47,7 +53,7 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "Fzu BBS",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor":"#007AFF"
 	},	
 	"tabBar": {
 		"color":"#999999",
