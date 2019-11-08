@@ -26,6 +26,10 @@
             "path" : "pages/Post/Post",
             "style" : {}
         }
+        ,{
+            "path" : "pages/details/details",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
