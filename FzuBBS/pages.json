@@ -23,11 +23,16 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/Post/Post",
+            "path" : "pages/details/details_Jobs",
             "style" : {}
-        }
-        ,{
-            "path" : "pages/details/details",
+        },{
+            "path" : "pages/details/details_Main",
+            "style" : {}
+        },{
+            "path" : "pages/details/details_Sec-Hand",
+            "style" : {}
+        },{
+            "path" : "pages/details/details_Study",
             "style" : {}
         }
         ,{

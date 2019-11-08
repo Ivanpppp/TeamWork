@@ -18,7 +18,7 @@
 		</view>
 		
 		
-		<view class="plate-list page-block" @click="ShowDetail">
+		<view class="plate-list page-block" @click="ShowDetail_Main">
 			<view class="single-plate">
 					<image src="../../static/Homeicon/Home.png" class="plate-icon"></image>
 				<view class="plate-name">
@@ -27,7 +27,7 @@
 			</view>
 			
 			
-			<view class="single-plate" @click="ShowDetail">
+			<view class="single-plate" @click="ShowDetail_Sec_Hand">
 				<view class="plate-icon">
 					<image src="../../static/Plate-icon/Sec-hand.png" mode="aspectFill" class="plate-icon"></image>
 				</view>
@@ -37,7 +37,7 @@
 			</view>
 			
 			
-			<view class="single-plate" @click="ShowDetail">
+			<view class="single-plate" @click="ShowDetail_Jobs">
 				<view class="plate-icon">
 					<image src="../../static/Plate-icon/Recuit.png"  mode="aspectFill" class="plate-icon"></image>
 				</view>
@@ -47,7 +47,7 @@
 			</view>
 			
 			
-			<view class="single-plate" @click="ShowDetail">
+			<view class="single-plate" @click="ShowDetail_Study">
 				<view class="plate-icon">
 					<image src="../../static/Plate-icon/study.png" mode="aspectFill" class="plate-icon"></image>
 				</view>
@@ -77,9 +77,24 @@
 			}
 		},
 		methods: {
-			ShowDetail(e){
+			ShowDetail_Study(e){
 				uni.navigateTo({
-					url:"../Post/Post"
+					url:"../details/details_Study"
+				})
+			},
+			ShowDetail_Jobs(e){
+				uni.navigateTo({
+					url:"../details/details_Jobs"
+				})
+			},
+			ShowDetail_Main(e){
+				uni.navigateTo({
+					url:"../details/details_Main"
+				})
+			},
+			ShowDetail_Sec_Hand(e){
+				uni.navigateTo({
+					url:"../details/details_Sec-Hand"
 				})
 			}
 			// pagedPlateList(keywords,page,pageSize){
