@@ -34,6 +34,14 @@
             "path" : "pages/det/det",
             "style" : {}
         }
+        ,{
+            "path" : "pages/changeinformation/changeinformation",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/upload/upload",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
