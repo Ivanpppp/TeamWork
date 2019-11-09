@@ -1,6 +1,10 @@
 <template>
-	<view>
+	<view class="page">
 		
+		
+		<view class="">
+			
+		</view>
 	</view>
 </template>
 
