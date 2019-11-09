@@ -1,0 +1,1 @@
+<view class="page"><input class="Publish_Title" type="text" placeholder="请输入标题..."/><textarea class="Publish_Content" placeholder="请输入内容..."></textarea><view class="icon"><image class="Publish_ico" src="../../static/submit.png" data-event-opts="{{[['tap',[['Publish',['$event']]]]]}}" bindtap="__e"></image></view></view>

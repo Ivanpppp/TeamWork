@@ -5,7 +5,15 @@
     "pages/login/register",
     "pages/Main/Main",
     "pages/My/My",
-    "pages/Recommend/Recommend"
+    "pages/Recommend/Recommend",
+    "pages/details/details_Jobs",
+    "pages/details/details_Main",
+    "pages/details/details_Sec-Hand",
+    "pages/details/details_Study",
+    "pages/det/det",
+    "pages/My/User_Info/User_Info",
+    "pages/My/Message/Message",
+    "pages/Publish_Editor/Publish_Editor"
   ],
   "window": {
     "navigationBarTextStyle": "black",

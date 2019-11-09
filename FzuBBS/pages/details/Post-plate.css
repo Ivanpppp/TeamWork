@@ -15,7 +15,12 @@
 	height: 45upx;
 	margin-top: 5upx;
 }
-
+.Publish_icon{
+	width: 64upx;
+	height: 64upx;
+	margin-right: 5upx;
+	
+}
 .single-hot-post{/* 每个热门帖子设置 */
 	display: flex;
 	flex-direction: column;
@@ -25,6 +30,7 @@
 .shp-title{
 	font-size: 45upx;
 	display: flex;
+	
 	border-bottom: 1rpx solid #ebedf0;
 }
 

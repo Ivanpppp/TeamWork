@@ -8,6 +8,7 @@
 					<view class="WorthReadWord">
 						热门帖子
 					</view>
+					<image src="../../static/Plate-icon/publish.png" class="Publish_icon" @click="Publish"></image>
 				</view>
 			
 			
@@ -147,6 +148,11 @@
 			det(){
 				uni.navigateTo({
 					url:"../det/det"
+				})
+			},
+			Publish(){
+				uni.navigateTo({
+					url:"../Publish_Editor/Publish_Editor"
 				})
 			}
 		}

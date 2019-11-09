@@ -42,3 +42,40 @@
 	padding: 0rpx 10rpx;
 }
 
+/* 板块页面布局 */
+.plate-list{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding-top: 70rpx;
+}
+.single-plate{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	padding: 30rpx 20rpx;
+	border-bottom: 1rpx solid #ebedf0;
+}
+.plate-icon {
+	width: 180rpx;
+	height: 180rpx;
+	margin-right: 20rpx;
+	border-radius: 3% ;
+}
+.plate-name{
+	font-size: 40rpx;
+	padding:  30rpx 20rpx 20rpx 20rpx;
+}
+

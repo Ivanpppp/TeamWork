@@ -47,6 +47,10 @@
             "path" : "pages/My/Message/Message",
             "style" : {}
         }
+        ,{
+            "path" : "pages/Publish_Editor/Publish_Editor",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
