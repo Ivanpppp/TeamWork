@@ -10,7 +10,7 @@
 
 <script>
 	var Page_nums = getCurrentPages();
-	console.log(Page_nums);
+
 	export default {
 		data() {
 			return {
