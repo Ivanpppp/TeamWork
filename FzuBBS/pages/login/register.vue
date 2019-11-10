@@ -21,7 +21,7 @@
 						placeholder="登录密码"
 						isShowPass
 					></wInput>
-					<wInput
+					<!-- <wInput
 						v-model="verCode"
 						type="number"
 						maxlength="4"
@@ -30,7 +30,7 @@
 						isShowCode
 						ref="runCode"
 						@setCode="getVerCode()"
-					></wInput>
+					></wInput> -->
 					
 				</view>
 				
@@ -64,9 +64,10 @@
 			return {
 				phoneData:'', // 用户/电话
 				passData:'', //密码
-				verCode:"", //验证码
+				// verCode:"", //验证码
 				showAgree:true, //协议是否选择
 				isRotate: false, //是否加载旋转
+				
 			}
 		},
 		components:{
@@ -91,22 +92,22 @@
 				    });
 				    return false;
 				}
-				console.log("获取验证码")
-				this.$refs.runCode.$emit('runCode'); //触发倒计时（一般用于请求成功验证码后调用）
-				uni.showToast({
-				    icon: 'none',
-					position: 'bottom',
-				    title: '模拟倒计时触发'
-				});
+				// console.log("获取验证码")
+				// this.$refs.runCode.$emit('runCode'); //触发倒计时（一般用于请求成功验证码后调用）
+				// uni.showToast({
+				//     icon: 'none',
+				// 	position: 'bottom',
+				//     title: '模拟倒计时触发'
+				// });
 				
-				setTimeout(function(){
-					_this.$refs.runCode.$emit('runCode',0); //假装模拟下需要 终止倒计时
-					uni.showToast({
-					    icon: 'none',
-						position: 'bottom',
-					    title: '模拟倒计时终止'
-					});
-				},3000)
+				// setTimeout(function(){
+				// 	_this.$refs.runCode.$emit('runCode',0); //假装模拟下需要 终止倒计时
+				// 	uni.showToast({
+				// 	    icon: 'none',
+				// 		position: 'bottom',
+				// 	    title: '模拟倒计时终止'
+				// 	});
+				// },3000)
 			},
 		    startReg() {
 				//注册
@@ -134,23 +135,34 @@
 		            uni.showToast({
 		                icon: 'none',
 						position: 'bottom',
-		                title: '密码不正确'
+		                title: '密码太短'
 		            });
 		            return false;
 		        }
-				if (this.verCode.length != 4) {
-				    uni.showToast({
-				        icon: 'none',
-						position: 'bottom',
-				        title: '验证码不正确'
-				    });
-				    return false;
-				}
+				// if (this.verCode.length != 4) {
+				//     uni.showToast({
+				//         icon: 'none',
+				// 		position: 'bottom',
+				//         title: '验证码不正确'
+				//     });
+				//     return false;
+				// }
+				uni.setStorage({
+					key:'UserId',
+					data:this.phoneData 
+				})
+				uni.setStorage({
+					key:'UserPass',
+					data:this.passData 
+				})
 				console.log("注册成功")
 				_this.isRotate=true
 				setTimeout(function(){
 					_this.isRotate=false
 				},3000)
+				uni.navigateTo({
+					url:"login"
+				})
 		    }
 		}
 	}

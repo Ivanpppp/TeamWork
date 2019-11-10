@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/login/forget",
+    "pages/login/register",
+    "pages/Main/Main",
+    "pages/My/My",
+    "pages/Recommend/Recommend",
+    "pages/details/details_Jobs",
+    "pages/details/details_Main",
+    "pages/details/details_Sec-Hand",
+    "pages/details/details_Study",
+    "pages/det/det",
+    "pages/My/User_Info/User_Info",
+    "pages/My/Message/Message",
+    "pages/Publish_Editor/Publish_Editor"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Fzu BBS",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/Recommend/Recommend",
+        "text": "推荐",
+        "iconPath": "static/tabBarico/rec.png",
+        "selectedIconPath": "static/tabBarico/rec_sel.png"
+      },
+      {
+        "pagePath": "pages/Main/Main",
+        "text": "主页",
+        "iconPath": "static/tabBarico/home.png",
+        "selectedIconPath": "static/tabBarico/home_sel.png"
+      },
+      {
+        "pagePath": "pages/My/My",
+        "text": "个人信息",
+        "iconPath": "static/tabBarico/my.png",
+        "selectedIconPath": "static/tabBarico/my_sel.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap79.json"
+}

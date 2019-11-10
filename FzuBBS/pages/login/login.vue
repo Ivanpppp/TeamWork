@@ -41,7 +41,8 @@
 	var _this;
 	import wInput from '../../components/watch-login/watch-input.vue' //input
 	import wButton from '../../components/watch-login/watch-button.vue' //button
-	
+	var Userid;
+	var UserPw;
 	export default {
 		data() {
 			return {
@@ -59,7 +60,9 @@
 			//this.isLogin();
 		},
 		methods: {
+			
 			isLogin(){
+				
 				//判断缓存中是否登录过，直接登录
 				// try {
 				// 	const value = uni.getStorageSync('setUserData');
@@ -75,6 +78,31 @@
 				// 	// error
 				// }
 			},
+			onLoad() {
+				for (var i=0;i<2;i++) {
+					uni.getStorage({
+						key:'UserId',
+						success: (res) => {
+							console.log(res);
+							Userid = res.data;
+							
+						},
+					})
+					if(i==1){
+						uni.getStorage({
+							key:'UserPass',
+							success: (res) => {
+								console.log(res);
+								UserPw = res.data;
+								
+							},
+						})
+					}
+				}
+				
+			
+			},
+			
 		    startLogin(){
 				//登录
 				if(this.isRotate){
@@ -89,7 +117,15 @@
 				    });
 				    return;
 				}
-		        if (this.passData.length < 5) {
+				if (this.phoneData!= Userid) {
+				     uni.showToast({
+				        icon: 'none',
+						position: 'bottom',
+				        title: '用户名出错'
+				    });
+				    return;
+				}
+		        if (this.passData != UserPw) {
 		            uni.showToast({
 		                icon: 'none',
 						position: 'bottom',
@@ -149,6 +185,8 @@
 		    }
 			
 		}
+		
+		
 	}
 </script>
 

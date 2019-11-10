@@ -139,6 +139,9 @@
 <script>
 	export default {
 		data() {
+			
+				title
+				content
 			return {
 				
 			}
