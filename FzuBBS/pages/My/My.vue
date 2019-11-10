@@ -7,7 +7,7 @@
 				<text class="go-login navigat-arrow" v-if="!login">&#xe65e;</text>
 			</view>
 		</view>
-		<view class="center-list">
+		<view class="center-list" @click="user">
 			<view class="center-list-item border-bottom">
 				<text class="list-icon">&#xe60f;</text>
 				<text class="list-text">帐号管理</text>
@@ -57,6 +57,11 @@
 						url:"../login/login"
 					})
 				}
+			},
+			user(){
+				uni.navigateTo({
+					url:"User_Info/User_Info"
+				})
 			}
 		}
 	}

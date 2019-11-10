@@ -1,0 +1,54 @@
+    .search{
+	    font-size: 14upx;
+	    background-color: #eaeaea ;
+	    height: 60upx;
+	    width: 650upx;
+    }
+	.search-icon{/* 搜索图标 */
+		width: 40upx;
+		height: 40upx;
+	}
+	.search-ico-wapper{/*布局*/
+		background-color: #eaeaea;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0upx 10upx;
+	}
+	.tt{
+		display: flex;
+		flex-direction: row;
+		padding: 0upx 20upx 20upx 20upx ;
+		position: fixed;
+		top: 100;
+		z-index: 2000;
+		background-color: #F8F8F8;
+	}	
+	.friends{
+		display: flex;
+		flex-direction: row;
+		padding: 0upx 20upx 20upx 20upx ;
+		position: fixed;
+		top: 100;
+		z-index: 2000;
+		background-color: #F8F8F8;
+		margin-top: 80upx;
+	}
+	.head{
+		background-color: #eaeaea;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0upx 10upx;
+	}
+	.headp{
+		width: 80upx;
+		height: 80upx;
+		border-radius: 50%;
+	}
+	.s{
+		font-size: 35upx;
+		background-color: #eaeaea ;
+		height: 80upx;
+		width: 610upx;
+	}

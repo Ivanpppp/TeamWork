@@ -1,6 +1,11 @@
 <template>
 	<view class="page">
-		帖子详情页
+		<text class="title">帖子标题</text>
+		<view class="content">
+			<text>帖子内容</text>
+		</view>
+		<textarea placeholder="回复" class="texta"/>
+		<button class="btn">确定</button>
 	</view>
 </template>
 
@@ -18,5 +23,5 @@
 </script>
 
 <style>
-
+    @import url("../det/det.css");
 </style>

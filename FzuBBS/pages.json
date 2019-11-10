@@ -45,10 +45,16 @@
         }
         ,{
             "path" : "pages/My/Message/Message",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "私信"
+			}
         }
         ,{
             "path" : "pages/Publish_Editor/Publish_Editor",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/My/User_Info/change/change",
             "style" : {}
         }
     ],
