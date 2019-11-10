@@ -13,6 +13,10 @@
 			<view class="s">
 				<text>Hello!</text>
 			</view>
+		
+		
+		<view class="">
+			
 		</view>
 	</view>
 </template>

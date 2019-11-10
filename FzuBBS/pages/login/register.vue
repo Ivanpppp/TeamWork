@@ -21,7 +21,7 @@
 						placeholder="登录密码"
 						isShowPass
 					></wInput>
-					<wInput
+					<!-- <wInput
 						v-model="verCode"
 						type="number"
 						maxlength="4"
@@ -30,7 +30,7 @@
 						isShowCode
 						ref="runCode"
 						@setCode="getVerCode()"
-					></wInput>
+					></wInput> -->
 					
 				</view>
 				
@@ -48,7 +48,7 @@
 					:class="showAgree?'cuIcon-radiobox':'cuIcon-round'"
 				>同意</text>
 				<!-- 协议地址 -->
-				<navigator url="" open-type="navigate">《协议》</navigator>
+				<navigator url="" open-type="navigate">《用户协议》</navigator>
 			</view>
 		</view>
 	</view>
