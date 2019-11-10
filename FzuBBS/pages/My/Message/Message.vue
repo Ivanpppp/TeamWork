@@ -1,4 +1,4 @@
-<template>
+<template><!--私信界面-->
 	<view class="page">
 		<view class="tt">
 			<view class="search-ico-wapper"><!-- 搜索图标 -->
