@@ -133,8 +133,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
-var Page_nums = getCurrentPages();
-console.log(Page_nums);var _default =
+var Page_nums = getCurrentPages();var _default =
+
 {
   data: function data() {
     return {};
@@ -144,6 +144,7 @@ console.log(Page_nums);var _default =
   methods: {
     Publish: function Publish() {
       uni.navigateBack({
+        // 发布后返回上一页
         delta: Page_nums });
 
     } } };exports.default = _default;

@@ -1,9 +1,9 @@
 <template>
 	<view class="center">
 		<view class="logo" @click="goLogin" :hover-class="!login ? 'logo-hover' : ''">
-			<image class="logo-img" :src="login ? uerInfo.avatarUrl :avatarUrl"></image>
+			<image class="logo-img" src="../../static/uni-center/logo.png"></image>
 			<view class="logo-title">
-				<text class="uer-name">Hi，{{login ? uerInfo.name : '您未登录'}}</text>
+				<text class="uer-name">Hi~</text>
 				<text class="go-login navigat-arrow" v-if="!login">&#xe65e;</text>
 			</view>
 		</view>
@@ -45,9 +45,9 @@
 	export default {
 		data() {
 			return {
-				login: false,
-				avatarUrl: "../../static/uni-center/logo.png",
-				uerInfo: {}
+				login: true,
+				username:'',
+				
 			}
 		},
 		methods: {
@@ -58,7 +58,8 @@
 					})
 				}
 			}
-		}
+		},
+			
 	}
 </script>
 

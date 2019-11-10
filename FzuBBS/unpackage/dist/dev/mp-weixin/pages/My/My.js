@@ -169,9 +169,9 @@ var _default =
 {
   data: function data() {
     return {
-      login: false,
-      avatarUrl: "../../static/uni-center/logo.png",
-      uerInfo: {} };
+      login: true,
+      username: '' };
+
 
   },
   methods: {

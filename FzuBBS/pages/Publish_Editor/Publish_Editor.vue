@@ -10,7 +10,7 @@
 
 <script>
 	var Page_nums = getCurrentPages();
-
+	
 	export default {
 		data() {
 			return {
@@ -20,6 +20,7 @@
 		methods: {
 			Publish(){
 				uni.navigateBack({
+					// 发布后返回上一页
 					delta: Page_nums
 				})
 			}
