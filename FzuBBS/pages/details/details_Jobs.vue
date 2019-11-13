@@ -66,9 +66,9 @@
 </template>
 
 <script>
-	var index;
-	var Title=[];//标题数组
-	var Content=[];//正文数组
+	var Job_index;
+	var Job_Title=[];//标题数组
+	var Job_Content=[];//正文数组
 	
 	export default {
 		data() {
@@ -79,7 +79,7 @@
 		methods: {
 			det(){
 				uni.navigateTo({
-					url:'../det/det?PJD_ID = 1'
+					url:'../det/det'
 				})
 			},
 			Publish(){
@@ -88,25 +88,27 @@
 				})
 			}
 		},
-		onShow() {
+		onLoad() {
+			Job_Title=[];//标题数组
+			Job_Content=[];//正文数组
 			uni.getStorage({
 				key:"PJ_ID",
 				success: (res) => {
-					index = res.data;
-					console.log(index);
-					for (var i = 1;i <= index ;i++) {
+					Job_index = res.data;
+					console.log(Job_index);
+					for (var i = 1;i <= Job_index ;i++) {
 						uni.getStorage({
 							key:i + "PJ_Title",
 							success: (res) => {
-								Title.push(res.data);
-								console.log(Title);
+								Job_Title.push(res.data);
+								console.log(Job_Title);
 								}
 							})
 						uni.getStorage({
-							key:i + "Pj_Content",
+							key:i + "PJ_Content",
 							success: (res1) => {
-								Content.push(res1.data);
-								console.log(Content)
+								Job_Content.push(res1.data);
+								console.log(Job_Content);
 							}
 						})
 					}

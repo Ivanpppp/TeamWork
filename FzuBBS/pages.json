@@ -50,7 +50,19 @@
         ,{
             "path" : "pages/Publish_Editor/Publish_Editor",
             "style" : {}
-        }
+        },
+		{
+		    "path" : "pages/Publish_Editor/Publish_Editor.1",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/Publish_Editor/Publish_Editor.2",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/Publish_Editor/Publish_Editor.3",
+		    "style" : {}
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -7492,9 +7492,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!*************************************************!*\
-  !*** D:/GitHubFiles/TeamWork/FzuBBS/pages.json ***!
-  \*************************************************/
+/*!*******************************************************************!*\
+  !*** C:/Users/71401/Documents/HBuilderProjects/FzuBBS/pages.json ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8399,20 +8399,20 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 
 /***/ }),
 /* 7 */
-/*!******************************************************************!*\
-  !*** D:/GitHubFiles/TeamWork/FzuBBS/pages.json?{"type":"style"} ***!
-  \******************************************************************/
+/*!************************************************************************************!*\
+  !*** C:/Users/71401/Documents/HBuilderProjects/FzuBBS/pages.json?{"type":"style"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/login/login": { "usingComponents": { "w-input": "/components/watch-login/watch-input", "w-button": "/components/watch-login/watch-button" } }, "pages/login/forget": { "usingComponents": { "w-input": "/components/watch-login/watch-input", "w-button": "/components/watch-login/watch-button" } }, "pages/login/register": { "usingComponents": { "w-input": "/components/watch-login/watch-input", "w-button": "/components/watch-login/watch-button" } }, "pages/Main/Main": { "usingComponents": {} }, "pages/My/My": { "usingComponents": {} }, "pages/Recommend/Recommend": { "usingComponents": {} }, "pages/details/details_Jobs": { "usingComponents": {} }, "pages/details/details_Main": { "usingComponents": {} }, "pages/details/details_Sec-Hand": { "usingComponents": {} }, "pages/details/details_Study": { "usingComponents": {} }, "pages/det/det": { "usingComponents": {} }, "pages/My/User_Info/User_Info": { "usingComponents": {} }, "pages/My/Message/Message": { "usingComponents": {} }, "pages/Publish_Editor/Publish_Editor": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "Fzu BBS", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/login/login": { "usingComponents": { "w-input": "/components/watch-login/watch-input", "w-button": "/components/watch-login/watch-button" } }, "pages/login/forget": { "usingComponents": { "w-input": "/components/watch-login/watch-input", "w-button": "/components/watch-login/watch-button" } }, "pages/login/register": { "usingComponents": { "w-input": "/components/watch-login/watch-input", "w-button": "/components/watch-login/watch-button" } }, "pages/Main/Main": { "usingComponents": {} }, "pages/My/My": { "usingComponents": {} }, "pages/Recommend/Recommend": { "usingComponents": {} }, "pages/details/details_Jobs": { "usingComponents": {} }, "pages/details/details_Main": { "usingComponents": {} }, "pages/details/details_Sec-Hand": { "usingComponents": {} }, "pages/details/details_Study": { "usingComponents": {} }, "pages/det/det": { "usingComponents": {} }, "pages/My/User_Info/User_Info": { "usingComponents": {} }, "pages/My/Message/Message": { "usingComponents": {} }, "pages/Publish_Editor/Publish_Editor": { "usingComponents": {} }, "pages/Publish_Editor/Publish_Editor.1": {}, "pages/Publish_Editor/Publish_Editor.2": {}, "pages/Publish_Editor/Publish_Editor.3": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "Fzu BBS", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
-/*!*****************************************************************!*\
-  !*** D:/GitHubFiles/TeamWork/FzuBBS/pages.json?{"type":"stat"} ***!
-  \*****************************************************************/
+/*!***********************************************************************************!*\
+  !*** C:/Users/71401/Documents/HBuilderProjects/FzuBBS/pages.json?{"type":"stat"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

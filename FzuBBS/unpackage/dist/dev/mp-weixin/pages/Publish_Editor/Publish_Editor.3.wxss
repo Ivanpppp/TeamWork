@@ -1,0 +1,20 @@
+
+.Publish_Title{
+	height: 100rpx;
+	width: 100%;
+	border-bottom: 1rpx solid #3F536E;
+}
+.Publish_Content{
+	height:900rpx;
+	width: 100%;
+}
+.icon{
+	text-align: center;
+	vertical-align: text-bottom;
+}
+.Publish_ico{
+	height: 100rpx;
+	width: 100rpx;
+}
+
+

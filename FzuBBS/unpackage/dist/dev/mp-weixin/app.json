@@ -13,7 +13,10 @@
     "pages/det/det",
     "pages/My/User_Info/User_Info",
     "pages/My/Message/Message",
-    "pages/Publish_Editor/Publish_Editor"
+    "pages/Publish_Editor/Publish_Editor",
+    "pages/Publish_Editor/Publish_Editor.1",
+    "pages/Publish_Editor/Publish_Editor.2",
+    "pages/Publish_Editor/Publish_Editor.3"
   ],
   "subPackages": [],
   "window": {
@@ -48,6 +51,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap28.json"
+  "usingComponents": {}
 }
