@@ -189,78 +189,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+var index;
+var Title = []; //标题数组
+var Content = []; //正文数组
 var _default =
 {
   data: function data() {
@@ -271,14 +203,40 @@ var _default =
   methods: {
     det: function det() {
       uni.navigateTo({
-        url: "../det/det" });
+        url: '../det/det?PJD_ID = 1' });
 
     },
     Publish: function Publish() {
       uni.navigateTo({
         url: "../Publish_Editor/Publish_Editor" });
 
-    } } };exports.default = _default;
+    } },
+
+  onShow: function onShow() {
+    uni.getStorage({
+      key: "PJ_ID",
+      success: function success(res) {
+        index = res.data;
+        console.log(index);
+        for (var i = 1; i <= index; i++) {
+          uni.getStorage({
+            key: i + "PJ_Title",
+            success: function success(res) {
+              Title.push(res.data);
+              console.log(Title);
+            } });
+
+          uni.getStorage({
+            key: i + "Pj_Content",
+            success: function success(res1) {
+              Content.push(res1.data);
+              console.log(Content);
+            } });
+
+        }
+      } });
+
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

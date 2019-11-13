@@ -132,22 +132,53 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
-var Page_nums = getCurrentPages();var _default =
-
+var Page_nums = getCurrentPages();
+var ID;var _default =
 {
   data: function data() {
-    return {};
-
+    return {
+      PJ_Title: "",
+      PJ_Content: "",
+      PJ_ID: "" };
 
   },
   methods: {
     Publish: function Publish() {
+      uni.setStorage({
+        key: "PJ_ID",
+        data: ID });
+
+      uni.setStorage({
+        key: ID + "PJ_Title",
+        data: this.PJ_Title });
+
+      uni.setStorage({
+        key: ID + "PJ_Content",
+        data: this.PJ_Content });
+
+
       uni.navigateBack({
         // 发布后返回上一页
         delta: Page_nums });
 
-    } } };exports.default = _default;
+    } },
+
+  onLoad: function onLoad() {
+    uni.getStorage({
+      key: "PJ_ID",
+      success: function success(res) {
+        ID = res.data;
+        ID += 1;
+      },
+      fail: function fail() {
+        ID = 1;
+      } });
+
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

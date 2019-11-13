@@ -1,29 +1,59 @@
 <template>
 	<view class="page">
-		<input type="text" placeholder="请输入标题..." class="Publish_Title"/>
-		<textarea  placeholder="请输入内容..." class="Publish_Content"/>
-		<view class="icon">
-			<image src="../../static/submit.png" class="Publish_ico" @click="Publish"></image>
-		</view>
+			<!-- 这是Jobs发布界面 -->
+			
+			<input type="text" v-model="PJ_Title" placeholder="请输入标题..." class="Publish_Title"/>
+			<textarea  placeholder="请输入内容..." class="Publish_Content" v-model="PJ_Content"/>
+			<view class="icon">
+				
+				<image src="../../static/submit.png" class="Publish_ico" @click="Publish()"></image>
+			</view>
 	</view>
 </template>
 
 <script>
 	var Page_nums = getCurrentPages();
-	
+	var ID;
 	export default {
 		data() {
 			return {
-				
+				PJ_Title:"",
+				PJ_Content:"",
+				PJ_ID:""
 			}
 		},
 		methods: {
 			Publish(){
+				uni.setStorage({
+					key:"PJ_ID",
+					data: ID
+				})
+				uni.setStorage({
+					key:ID + "PJ_Title",
+					data: this.PJ_Title
+				})
+				uni.setStorage({
+					key:ID + "PJ_Content",
+					data: this.PJ_Content
+				})
+				
 				uni.navigateBack({
 					// 发布后返回上一页
 					delta: Page_nums
 				})
 			}
+		},
+		onLoad() {
+			uni.getStorage({
+				key:"PJ_ID",
+				success: (res) => {
+					ID = res.data;
+					ID += 1;
+				},
+				fail() {
+					ID = 1;
+				}
+			})
 		}
 	}
 </script>
