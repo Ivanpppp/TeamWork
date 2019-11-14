@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/details/details_Study",
     "pages/login/login",
     "pages/login/forget",
     "pages/login/register",
@@ -9,7 +10,6 @@
     "pages/details/details_Jobs",
     "pages/details/details_Main",
     "pages/details/details_Sec-Hand",
-    "pages/details/details_Study",
     "pages/det/det",
     "pages/My/User_Info/User_Info",
     "pages/My/Message/Message",

@@ -1,6 +1,10 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+		    "path" : "pages/details/details_Study",
+		    "style" : {}
+		}
+		,{
 		    "path": "pages/login/login",
 		    "style": {}
 		}, {
@@ -32,10 +36,6 @@
             "path" : "pages/details/details_Sec-Hand",
             "style" : {}
         },{
-            "path" : "pages/details/details_Study",
-            "style" : {}
-        }
-        ,{
             "path" : "pages/det/det",
             "style" : {}
         }

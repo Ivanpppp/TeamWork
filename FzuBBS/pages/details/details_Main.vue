@@ -45,15 +45,13 @@
 		</view>	
 		<view class="Post-List">
 			
-			<view class="single-hot-post" @click="det()">
+			<view class="single-hot-post" @click="det()"  v-for="item in MainPost_list" :key="item.Main_index" >
 				<view class="shp-title">
-					咨询解答转专业的一切疑问
+					{{item.Main_Title}}
 				</view>
 				
 				<view class="shp-content">
-					今年转专业工作已经开始了，相比去年有小差，申请条件不看成绩绩点了
-					lz往年成功转专业成功，当时也很困惑找不到人询问，所以今年为学弟学妹无偿在线解答所有转专业问题
-					咨询前先要了解教务处转专业17年公告
+					{{item.Main_Content}}
 				</view>
 				<view class="recommend-time">
 					2019-06-23 11:41
@@ -66,18 +64,25 @@
 </template>
 
 <script>
-	var Main_index;
+	var Main_index = 0;
 	var Main_Title=[];//标题数组
 	var Main_Content=[];//正文数组
 	
 	export default {
 		data() {
 			return {
-				
+				Main_index:'',
+				Main_Title:'',
+				Main_Content:'',
+				MainPost_list:[
+					{Main_index: 1 , Main_Title : '主板块', Main_Content:'这是主板块'}
+				]
+					 
 			}
 		},
+		
 		methods: {
-			det(){
+			det(e){
 				uni.navigateTo({
 					url:'../det/det'
 				})
@@ -91,15 +96,16 @@
 		onLoad() {
 			Main_Title=[];//标题数组
 			Main_Content=[];//正文数组
+			var title;
+			var content;
 			uni.getStorage({
 				key:"PM_ID",
 				success: (res) => {
-					Main_index = res.data;
-					console.log(Main_index);
 					for (var i = 1;i <= Main_index ;i++) {
 						uni.getStorage({
 							key:i + "PM_Title",
 							success: (res) => {
+								title = res.data;
 								Main_Title.push(res.data);
 								console.log(Main_Title);
 								}
@@ -107,15 +113,20 @@
 						uni.getStorage({
 							key:i + "PM_Content",
 							success: (res1) => {
+								content = res1.data;
 								Main_Content.push(res1.data);
 								console.log(Main_Content)
 							}
 						})
+						var Post = {Main_index: i, Main_Title: title , Main_Content: content }
+						this.MainPost_list.push(Post)
 					}
 				}
 			})
 		}
+		
 	}
+	
 </script>
 
 <style>
