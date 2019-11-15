@@ -102,12 +102,12 @@
 					key:"PS_ID",
 					success: (res) => {
 						Sty_index = res.data
-						for (var i = 1;i <= Sec_index ;i++) {
+						for (var i = 1;i <= Sty_index ;i++) {
 							uni.getStorage({
 								key:i + "PS_Title",
 								success: (res) => {
 									title = res.data;
-									Sec_Title.push(res.data);
+									Sty_Title.push(res.data);
 									
 									}
 								})

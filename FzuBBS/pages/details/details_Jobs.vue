@@ -99,10 +99,10 @@
 				let title;
 				let content;
 				uni.getStorage({
-					key:"PM_ID",
+					key:"PJ_ID",
 					success: (res) => {
-						Main_index = res.data
-						for (var i = 1;i <= Main_index ;i++) {
+						Jobs_index = res.data
+						for (var i = 1;i <= Jobs_index ;i++) {
 							uni.getStorage({
 								key:i + "PJ_Title",
 								success: (res) => {

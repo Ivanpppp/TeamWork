@@ -1,1 +1,2 @@
+setCssToHead([".",[1],"title{ font-size: ",[0,70],"; border-bottom: ",[0,1]," solid #000000; }\n.",[1],"content{ font-size: ",[0,50],"; height: ",[0,500],"; border-bottom: ",[0,1]," solid #000000; }\n",],undefined,{path:"./pages/det/detJobs/detJobs.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/det/detJobs/detJobs.wxml') } }));
