@@ -1,7 +1,5 @@
 <template>
 	<view >
-		
-		
 		<view class="Hot-Post page-block">
 				<view class="WorthRead-title">
 					<image src="../../static/RecIcon/WorthReading.png" class="WorthRead-icon"></image>
@@ -45,15 +43,13 @@
 		</view>	
 		<view class="Post-List">
 			
-			<view class="single-hot-post" @click="det()">
+			<view class="single-hot-post" @click="det(item)"  v-for="item in JobsPost_list" :key="item.Jobs_index" >
 				<view class="shp-title">
-					咨询解答转专业的一切疑问
+					{{item.Jobs_Title}}
 				</view>
 				
 				<view class="shp-content">
-					今年转专业工作已经开始了，相比去年有小差，申请条件不看成绩绩点了
-					lz往年成功转专业成功，当时也很困惑找不到人询问，所以今年为学弟学妹无偿在线解答所有转专业问题
-					咨询前先要了解教务处转专业17年公告
+					{{item.Jobs_Content}}
 				</view>
 				<view class="recommend-time">
 					2019-06-23 11:41
@@ -66,56 +62,76 @@
 </template>
 
 <script>
-	var Job_index;
-	var Job_Title=[];//标题数组
-	var Job_Content=[];//正文数组
+	var Jobs_index = 0;
+	var Jobs_Title=[];//标题数组
+	var Jobs_Content=[];//正文数组
 	
 	export default {
 		data() {
 			return {
-				
+				Jobs_index:'',
+				Jobs_Title:'',
+				Jobs_Content:'',
+				JobsPost_list:[
+					{Jobs_index: 0 , Jobs_Title : '招聘板块', Jobs_Content:'这是招聘板块'}
+				]
+					 
 			}
 		},
+		
 		methods: {
-			det(){
+			det(item){
 				uni.navigateTo({
-					url:'../det/det'
+					url:'../det/detJobs/detJobs?id='+item.Jobs_index 
 				})
 			},
 			Publish(){
 				uni.navigateTo({
 					url:"../Publish_Editor/Publish_Editor"
 				})
+			},
+			handleClick() {
+				console.log(this.JobsPost_list)
+			},
+			getData() {
+				let Jobs_Title=[];//标题数组
+				let Jobs_Content=[];//正文数组
+				let title;
+				let content;
+				uni.getStorage({
+					key:"PM_ID",
+					success: (res) => {
+						Main_index = res.data
+						for (var i = 1;i <= Main_index ;i++) {
+							uni.getStorage({
+								key:i + "PJ_Title",
+								success: (res) => {
+									title = res.data;
+									Jobs_Title.push(res.data);
+									
+									}
+								})
+							uni.getStorage({
+								key:i + "PJ_Content",
+								success: (res1) => {
+									content = res1.data;
+									Jobs_Content.push(res1.data);
+									
+								}
+							})
+							var Post = {Jobs_index: i, Jobs_Title: title , Jobs_Content: content }
+							
+							this.JobsPost_list.push(Post)
+						}
+					}
+				})
 			}
 		},
 		onLoad() {
-			Job_Title=[];//标题数组
-			Job_Content=[];//正文数组
-			uni.getStorage({
-				key:"PJ_ID",
-				success: (res) => {
-					Job_index = res.data;
-					console.log(Job_index);
-					for (var i = 1;i <= Job_index ;i++) {
-						uni.getStorage({
-							key:i + "PJ_Title",
-							success: (res) => {
-								Job_Title.push(res.data);
-								console.log(Job_Title);
-								}
-							})
-						uni.getStorage({
-							key:i + "PJ_Content",
-							success: (res1) => {
-								Job_Content.push(res1.data);
-								console.log(Job_Content);
-							}
-						})
-					}
-				}
-			})
+			this.getData()
 		}
 	}
+	
 </script>
 
 <style>

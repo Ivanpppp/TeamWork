@@ -162,11 +162,7 @@
           "selectedIconPath": "static/tabBarico/my_sel.png"
         }
       ],
-      "height": "50px",
-      "child": [
-        "lauchwebview"
-      ],
-      "selected": 1
+      "height": "50px"
     }
   }
 }

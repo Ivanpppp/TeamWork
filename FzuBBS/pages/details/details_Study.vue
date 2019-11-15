@@ -1,7 +1,5 @@
 <template>
 	<view >
-		
-		
 		<view class="Hot-Post page-block">
 				<view class="WorthRead-title">
 					<image src="../../static/RecIcon/WorthReading.png" class="WorthRead-icon"></image>
@@ -45,12 +43,12 @@
 		</view>	
 		<view class="Post-List">
 			
-			<view class="single-hot-post" @click="det" v-for="item in StyPost_list" :key="item.Sty_index">
-				<view class="shp-title" >
+			<view class="single-hot-post" @click="det(item)"  v-for="item in StyPost_list" :key="item.Sty_index" >
+				<view class="shp-title">
 					{{item.Sty_Title}}
 				</view>
 				
-				<view class="shp-content" >
+				<view class="shp-content">
 					{{item.Sty_Content}}
 				</view>
 				<view class="recommend-time">
@@ -64,11 +62,10 @@
 </template>
 
 <script>
-	var Sty_index;
-	var Sty_Title=new Array();//标题数组
-	var Sty_Content=new Array();//正文数组
-	var title;
-	var content;
+	var Sty_index = 0;
+	var Sty_Title=[];//标题数组
+	var Sty_Content=[];//正文数组
+	
 	export default {
 		data() {
 			return {
@@ -76,94 +73,65 @@
 				Sty_Title:'',
 				Sty_Content:'',
 				StyPost_list:[
-				{Sty_index: 1 , Sty_Title : '主板块', Sty_Content:'这是主板块'}
+					{Sty_index: 0 , Sty_Title : '学习板块', Sty_Content:'这是学习板块'}
 				]
+					 
 			}
 		},
+		
 		methods: {
-			det(e){
-				console.log(e);
+			det(item){
 				uni.navigateTo({
-					url:'../det/det'
+					url:'../det/detSty/detSty?id='+item.Sty_index 
 				})
 			},
 			Publish(){
 				uni.navigateTo({
 					url:"../Publish_Editor/Publish_Editor.3"
 				})
+			},
+			handleClick() {
+				console.log(this.StyPost_list)
+			},
+			getData() {
+				let Sty_Title=[];//标题数组
+				let Sty_Content=[];//正文数组
+				let title;
+				let content;
+				uni.getStorage({
+					key:"PS_ID",
+					success: (res) => {
+						Sty_index = res.data
+						for (var i = 1;i <= Sec_index ;i++) {
+							uni.getStorage({
+								key:i + "PS_Title",
+								success: (res) => {
+									title = res.data;
+									Sec_Title.push(res.data);
+									
+									}
+								})
+							uni.getStorage({
+								key:i + "PS_Content",
+								success: (res1) => {
+									content = res1.data;
+									Sty_Content.push(res1.data);
+									
+								}
+							})
+							var Post = {Sty_index: i, Sty_Title: title , Sty_Content: content }
+							
+							this.StyPost_list.push(Post)
+						}
+					}
+				})
 			}
 		},
 		onLoad() {
-			
-			// uni.getStorage({
-			// 	key:"PS_ID",
-			// 	success: (res) => {
-			// 		Sty_index = res.data;
-			// 		console.log(Sty_index);
-			// 		for (var i = 1;i <= Sty_index ;i++) {
-			// 			uni.getStorage({
-			// 				key:i + "PS_Title",
-			// 				success: (res) => {
-			// 					title = res.data;
-			// 					Sty_Title.push(res.data);
-
-			// 					}
-			// 				})
-			// 			uni.getStorage({
-			// 				key:i + "PS_Content",
-			// 				success: (res1) => {
-			// 					content = res1.data;
-			// 					Sty_Content.push(res1.data);
-								
-								
-			// 				}
-			// 			})
-						
-			// 			console.log(Sty_Title)
-			// 			console.log(Sty_Content)
-			// 			var Post = {Sty_index: i, Sty_Title: title , Sty_Content: content }
-			// 			console.log(Post)
-			// 			this.StyPost_list.push(Post)
-			// 		}
-					
-			// 	},
-				
-			// })
-			uni.getStorage({
-				key:"PS_ID",
-				success: (res) => {
-					Sty_index = res.data;
-					console.log(Sty_index);
-					for (var i = 1;i <= Sty_index ;i++) {
-						uni.getStorage({
-							key:i + "PS_Title",
-							success: (res) => {
-								title = res.data;
-								Sty_Title.push(res.data);
-			
-								}
-							})
-						uni.getStorage({
-							key:i + "PS_Content",
-							success: (res1) => {
-								content = res1.data;
-								Sty_Content.push(res1.data);
-							}
-						})
-						
-						
-						
-						var Post = {Sty_index: i, Sty_Title: Sty_Title , Sty_Content: Sty_Content }
-						console.log(Post)
-						this.StyPost_list.push(Post)
-					}
-					
-				},
-				
-			})
+			this.getData()
 		}
 	}
-
+	
 </script>
 
 <style>

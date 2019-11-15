@@ -1,6 +1,6 @@
 <template>
 	<view class="page">
-			<!-- 这是Jobs发布界面 -->
+			<!-- 这是Main发布界面 -->
 			
 			<input type="text" v-model="PJ_Title" placeholder="请输入标题..." class="Publish_Title"/>
 			<textarea  placeholder="请输入内容..." class="Publish_Content" v-model="PJ_Content"/>
