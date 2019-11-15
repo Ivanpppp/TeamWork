@@ -1,6 +1,10 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path" : "pages/Main/Main",
+			"style" : {}
+		},
+		{
 		    "path" : "pages/details/details_Study",
 		    "style" : {}
 		}
@@ -13,11 +17,7 @@
 		}, {
 		    "path": "pages/login/register",
 		    "style": {}
-		} ,
-		{
-			"path" : "pages/Main/Main",
-			"style" : {}
-		}
+		} 
         ,{
             "path" : "pages/My/My",
             "style" : {}

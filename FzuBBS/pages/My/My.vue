@@ -45,7 +45,7 @@
 	export default {
 		data() {
 			return {
-				login: true,
+				login: false,
 				username:'',
 				
 			}

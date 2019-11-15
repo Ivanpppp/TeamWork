@@ -7492,9 +7492,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!*******************************************************************!*\
-  !*** C:/Users/71401/Documents/HBuilderProjects/FzuBBS/pages.json ***!
-  \*******************************************************************/
+/*!*************************************************!*\
+  !*** D:/GitHubFiles/TeamWork/FzuBBS/pages.json ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8399,9 +8399,9 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 
 /***/ }),
 /* 7 */
-/*!************************************************************************************!*\
-  !*** C:/Users/71401/Documents/HBuilderProjects/FzuBBS/pages.json?{"type":"style"} ***!
-  \************************************************************************************/
+/*!******************************************************************!*\
+  !*** D:/GitHubFiles/TeamWork/FzuBBS/pages.json?{"type":"style"} ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8410,9 +8410,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 8 */
-/*!***********************************************************************************!*\
-  !*** C:/Users/71401/Documents/HBuilderProjects/FzuBBS/pages.json?{"type":"stat"} ***!
-  \***********************************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/GitHubFiles/TeamWork/FzuBBS/pages.json?{"type":"stat"} ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

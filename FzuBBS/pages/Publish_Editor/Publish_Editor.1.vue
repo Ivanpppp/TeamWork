@@ -17,8 +17,8 @@
 	export default {
 		data() {
 			return {
-				PM_Title:"",
-				PM_Content:"",
+				PJ_Title:"",
+				PJ_Content:"",
 				PM_ID:""
 			}
 		},
@@ -36,11 +36,7 @@
 					key:ID + "PM_Content",
 					data: this.PJ_Content
 				})
-				
-				uni.navigateBack({
-					// 发布后返回上一页
-					delta: Page_nums
-				})
+				uni.navigateBack()
 			}
 		},
 		onLoad() {

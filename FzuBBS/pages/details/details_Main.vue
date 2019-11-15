@@ -1,7 +1,5 @@
 <template>
 	<view >
-		
-		
 		<view class="Hot-Post page-block">
 				<view class="WorthRead-title">
 					<image src="../../static/RecIcon/WorthReading.png" class="WorthRead-icon"></image>
@@ -45,7 +43,7 @@
 		</view>	
 		<view class="Post-List">
 			
-			<view class="single-hot-post" @click="det()"  v-for="item in MainPost_list" :key="item.Main_index" >
+			<view class="single-hot-post" @click="det(item)"  v-for="item in MainPost_list" :key="item.Main_index" >
 				<view class="shp-title">
 					{{item.Main_Title}}
 				</view>
@@ -82,49 +80,56 @@
 		},
 		
 		methods: {
-			det(e){
+			det(item){
 				uni.navigateTo({
-					url:'../det/det'
+					url:'../det/det?id=' + item.Main_index
 				})
 			},
 			Publish(){
 				uni.navigateTo({
 					url:"../Publish_Editor/Publish_Editor.1"
 				})
-			}
-		},
-		onLoad() {
-			Main_Title=[];//标题数组
-			Main_Content=[];//正文数组
-			var title;
-			var content;
-			uni.getStorage({
-				key:"PM_ID",
-				success: (res) => {
-					for (var i = 1;i <= Main_index ;i++) {
-						uni.getStorage({
-							key:i + "PM_Title",
-							success: (res) => {
-								title = res.data;
-								Main_Title.push(res.data);
-								console.log(Main_Title);
+			},
+			handleClick() {
+				console.log(this.MainPost_list)
+			},
+			getData() {
+				let Main_Title=[];//标题数组
+				let Main_Content=[];//正文数组
+				let title;
+				let content;
+				uni.getStorage({
+					key:"PM_ID",
+					success: (res) => {
+						Main_index = res.data
+						for (var i = 1;i <= Main_index ;i++) {
+							uni.getStorage({
+								key:i + "PM_Title",
+								success: (res) => {
+									title = res.data;
+									Main_Title.push(res.data);
+									console.log(Main_Title);
+									}
+								})
+							uni.getStorage({
+								key:i + "PM_Content",
+								success: (res1) => {
+									content = res1.data;
+									Main_Content.push(res1.data);
+									console.log(Main_Content)
 								}
 							})
-						uni.getStorage({
-							key:i + "PM_Content",
-							success: (res1) => {
-								content = res1.data;
-								Main_Content.push(res1.data);
-								console.log(Main_Content)
-							}
-						})
-						var Post = {Main_index: i, Main_Title: title , Main_Content: content }
-						this.MainPost_list.push(Post)
+							var Post = {Main_index: i, Main_Title: title , Main_Content: content }
+							console.log(132)
+							this.MainPost_list.push(Post)
+						}
 					}
-				}
-			})
+				})
+			}
+		},
+		onShow() {
+			this.getData()
 		}
-		
 	}
 	
 </script>
