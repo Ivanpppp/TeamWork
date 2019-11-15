@@ -169,7 +169,7 @@ var _default =
 {
   data: function data() {
     return {
-      login: true,
+      login: false,
       username: '' };
 
 

@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"Publish_Title{ height: ",[0,100],"; width: 100%; border-bottom: ",[0,1]," solid #3F536E; }\n.",[1],"Publish_Content{ height:",[0,900],"; width: 100%; }\n.",[1],"icon{ text-align: center; vertical-align: text-bottom; }\n.",[1],"Publish_ico{ height: ",[0,100],"; width: ",[0,100],"; }\n",],undefined,{path:"./pages/Publish_Editor/Publish_Editor.2.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/Publish_Editor/Publish_Editor.2.wxml') } }));

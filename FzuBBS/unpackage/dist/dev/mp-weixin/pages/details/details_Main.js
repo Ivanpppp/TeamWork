@@ -185,8 +185,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 var Main_index = 0;
 var Main_Title = []; //标题数组
@@ -199,54 +197,62 @@ var _default =
       Main_Title: '',
       Main_Content: '',
       MainPost_list: [
-      { Main_index: 1, Main_Title: '主板块', Main_Content: '这是主板块' }] };
+      { Main_index: 0, Main_Title: '主板块', Main_Content: '这是主板块' }] };
 
 
 
   },
 
   methods: {
-    det: function det(e) {
+    det: function det(item) {
       uni.navigateTo({
-        url: '../det/det' });
+        url: '../det/det?id=' + item.Main_index });
 
     },
     Publish: function Publish() {
       uni.navigateTo({
         url: "../Publish_Editor/Publish_Editor.1" });
 
+    },
+    handleClick: function handleClick() {
+      console.log(this.MainPost_list);
+    },
+    getData: function getData() {var _this = this;
+      var Main_Title = []; //标题数组
+      var Main_Content = []; //正文数组
+      var title;
+      var content;
+      uni.getStorage({
+        key: "PM_ID",
+        success: function success(res) {
+          Main_index = res.data;
+          for (var i = 1; i <= Main_index; i++) {
+            uni.getStorage({
+              key: i + "PM_Title",
+              success: function success(res) {
+                title = res.data;
+                Main_Title.push(res.data);
+                console.log(Main_Title);
+              } });
+
+            uni.getStorage({
+              key: i + "PM_Content",
+              success: function success(res1) {
+                content = res1.data;
+                Main_Content.push(res1.data);
+                console.log(Main_Content);
+              } });
+
+            var Post = { Main_index: i, Main_Title: title, Main_Content: content };
+            console.log(132);
+            _this.MainPost_list.push(Post);
+          }
+        } });
+
     } },
 
-  onLoad: function onLoad() {var _this = this;
-    Main_Title = []; //标题数组
-    Main_Content = []; //正文数组
-    var title;
-    var content;
-    uni.getStorage({
-      key: "PM_ID",
-      success: function success(res) {
-        for (var i = 1; i <= Main_index; i++) {
-          uni.getStorage({
-            key: i + "PM_Title",
-            success: function success(res) {
-              title = res.data;
-              Main_Title.push(res.data);
-              console.log(Main_Title);
-            } });
-
-          uni.getStorage({
-            key: i + "PM_Content",
-            success: function success(res1) {
-              content = res1.data;
-              Main_Content.push(res1.data);
-              console.log(Main_Content);
-            } });
-
-          var Post = { Main_index: i, Main_Title: title, Main_Content: content };
-          _this.MainPost_list.push(Post);
-        }
-      } });
-
+  onLoad: function onLoad() {
+    this.getData();
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

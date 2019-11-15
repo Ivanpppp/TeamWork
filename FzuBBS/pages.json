@@ -1,6 +1,9 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+		    "path": "pages/login/login",
+		    "style": {}
+		},{
 			"path" : "pages/Main/Main",
 			"style" : {}
 		},
@@ -8,10 +11,7 @@
 		    "path" : "pages/details/details_Study",
 		    "style" : {}
 		}
-		,{
-		    "path": "pages/login/login",
-		    "style": {}
-		}, {
+		, {
 		    "path": "pages/login/forget",
 		    "style": {}
 		}, {
@@ -63,6 +63,18 @@
 		    "path" : "pages/Publish_Editor/Publish_Editor.3",
 		    "style" : {}
 		}
+        ,{
+            "path" : "pages/det/detSec/detSec",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/det/detJobs/detJobs",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/det/detSty/detSty",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

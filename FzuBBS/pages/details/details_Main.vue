@@ -73,7 +73,7 @@
 				Main_Title:'',
 				Main_Content:'',
 				MainPost_list:[
-					{Main_index: 1 , Main_Title : '主板块', Main_Content:'这是主板块'}
+					{Main_index: 0 , Main_Title : '主板块', Main_Content:'这是主板块'}
 				]
 					 
 			}
@@ -127,7 +127,7 @@
 				})
 			}
 		},
-		onShow() {
+		onLoad() {
 			this.getData()
 		}
 	}

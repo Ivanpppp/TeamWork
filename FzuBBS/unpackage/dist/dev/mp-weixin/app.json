@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/details/details_Study",
     "pages/login/login",
+    "pages/Main/Main",
+    "pages/details/details_Study",
     "pages/login/forget",
     "pages/login/register",
-    "pages/Main/Main",
     "pages/My/My",
     "pages/Recommend/Recommend",
     "pages/details/details_Jobs",
@@ -16,7 +16,10 @@
     "pages/Publish_Editor/Publish_Editor",
     "pages/Publish_Editor/Publish_Editor.1",
     "pages/Publish_Editor/Publish_Editor.2",
-    "pages/Publish_Editor/Publish_Editor.3"
+    "pages/Publish_Editor/Publish_Editor.3",
+    "pages/det/detSec/detSec",
+    "pages/det/detJobs/detJobs",
+    "pages/det/detSty/detSty"
   ],
   "subPackages": [],
   "window": {
@@ -52,5 +55,5 @@
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap53.json"
+  "sitemapLocation": "sitemap93.json"
 }
